@@ -1,0 +1,161 @@
+.about{
+  height: 1050px;
+  padding: 180px 0;
+  z-index: 0;
+  .container{
+    position: relative;
+    height: 100%;
+  }
+}
+
+.about__inner{
+  height: 100%;
+}
+
+
+.about__content{
+  z-index: 2;
+}
+.about__content-inner{
+  padding: 65px;
+  background-color: #dadbdc;
+}
+
+.about-section__heading{
+  margin-bottom: 57%;
+}
+
+.about__content-text{
+}
+
+.about__img-wrap{
+  position: relative;
+}
+
+.about__img{
+
+}
+
+.about__img-1{
+  background: url("@{rootUrl}homepage/about_01.jpg")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+
+  width: 90%;
+  height: 85%;
+  margin-top: -25%;
+  margin-left: -18%;
+
+  z-index:  0;
+}
+
+.about__img-2{
+  background: url("@{rootUrl}homepage/about_02.jpg")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+
+  width: 105%;
+  height: 57%;
+  right: 9%;
+
+  z-index: 10;
+  position: absolute;
+  bottom: -21%;
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+  .about{
+    height: 945px;
+  }
+  .about-section__heading {
+    margin-bottom: 70px;
+  }
+  .about__img-1 {
+    margin-left: -22%;
+    margin-top: -15%;
+  }
+  .about__img-2 {
+    right: 13%;
+    bottom: -29%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    height: 800px;
+  }
+  .about__content-inner {
+    padding: 40px;
+    margin-top: 9%;
+  }
+  .about__img-2 {
+    right: 12%;
+    bottom: -21%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    height: auto;
+  }
+  .about-section__heading {
+    margin-bottom: 50px;
+  }
+  .about__content {
+    z-index: 0;
+  }
+  .about__inner {
+    padding: 0 15px;
+  }
+  .about__img-1 {
+    z-index: 1;
+    width: 280px;
+    height: 369px;
+    margin-top: -20px;
+    margin-left: -30px;
+  }
+  .about__img-2 {
+    width: 355px;
+    height: 236px;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    margin-left: auto;
+    margin-top: -41px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .about__img-1 {
+    margin-left: -15px;
+  }
+  .about-work__content-inner {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about {
+    height: auto;
+  }
+  .about__img-1 {
+    width: 235px;
+    height: 302px;
+  }
+  .about__img-2 {
+    width: 274px;
+    height: 188px;
+    margin-top: -35px;
+  }
+}
+
+
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) and(max-width: 420px){
+  .about {
+    height: 100%;
+  }
+}

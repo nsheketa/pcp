@@ -1,0 +1,125 @@
+.downloads{
+  height: 700px;
+  .ai-flex-center();
+  background-color: #dfd8d1;
+}
+
+.downloads__inner{
+
+}
+
+.downloads__content-wrap{
+
+}
+
+.downloads__heading{
+  position: relative;
+  font-family: @Sukhumvitset;
+  font-size: 40px;
+  margin-bottom: 40px;
+  .downloads__icon{
+    display: block;
+    position: absolute;
+    left: -100px;
+    top:  0;
+    bottom: 0;
+    .size(56px, 75px);
+    margin: auto;
+    vertical-align: middle;
+    background: url("@{rootUrl}homepage/icon.png")no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+.downloads__subheading{
+  margin-bottom: 35px;
+  letter-spacing: 1.6px;
+}
+
+.downloads__content{
+  max-width: 85%;
+}
+
+.downloads__links-wrap{
+
+  .downloads__subheading{
+    text-align: center;
+  }
+}
+
+.downloads__links-inner{
+  width: 90%;
+  .center();
+  padding-top: 15px;
+}
+
+.downloads-link__wrap{
+  width: 100%;
+  margin-bottom: 20px;
+  .center();
+}
+
+.downloads__link{
+  padding: 10px 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .downloads__heading {
+    padding-left: 55px;
+    .downloads__icon {
+      left: 0;
+      width: 41px;
+      height: 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .downloads {
+    height: auto;
+  }
+  .downloads__inner{
+    padding: 0 15px;
+  }
+  .downloads__content-wrap{
+    margin-bottom: 35px;
+    .downloads__subheading{
+      margin-top: -40px;
+      margin-left: 83px;
+    }
+  }
+  .downloads__heading{
+    text-transform: lowercase;
+    padding-left: 80px;
+   .downloads__icon {
+      top: 18px;
+      width: 40px;
+      height: 55px;
+    }
+  }
+  .downloads__content {
+    max-width: 90%;
+  }
+  .downloads__links-inner {
+    width: 100%;
+    padding-top: 0;
+  }
+  .downloads__links-wrap {
+    .downloads__subheading {
+      text-align: left;
+    }
+  }
+  .downloads-link__wrap{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .downloads__heading{
+    font-size: 36px;
+  }
+  .downloads__content {
+    max-width: 100%;
+  }
+}

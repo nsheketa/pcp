@@ -1,0 +1,55 @@
+h1,.h1{
+  font-size: 120px;
+  //font-size: 187px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  .rotate(90deg);
+  font-family: @Sukhumvitset;
+}
+
+h2,.h2{
+  //font-size: 40px;
+  font-size: 24px;
+  letter-spacing: 2.2px;
+  &.blue{
+    color: @colorDarkBlue;
+  }
+}
+
+h3,.h3{
+  //font-size: 30px;
+  font-size: 20px;
+  letter-spacing: 2.2px;
+}
+
+h4,.h4{
+  //font-size: 24px;
+  font-size: 16px;
+  letter-spacing: 2.2px;
+}
+
+.section__subheading{
+  font-family: @Sukhumvitset;
+  font-size: 40px;
+  color: @textColor;
+  &.blue{
+    color: @colorDarkBlue;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__subheading{
+    font-family: @baseFontFamily;
+  }
+}
+@media screen and (max-width: 578px) {
+  h1,.h1 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .section__subheading{
+    font-size: 36px;
+  }
+}

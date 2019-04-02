@@ -1,0 +1,169 @@
+body{
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  &.no-scroll{
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+  }
+}
+html{
+  &.no-scroll{
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+  }
+}
+
+.main{
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-line{
+  position: absolute;
+  right: 25px;
+  bottom: 0px;
+  z-index: 10;
+  .size(10px, 100%);
+  background-color: #c4b8ac;
+}
+
+.nav-gap{
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  z-index: 100;
+  .size(10px, 40px);
+  background-color: #fff;
+  &.fixed{
+    position: fixed;
+  }
+  &.absolute{
+    position: absolute;
+  }
+}
+
+.width-1000{
+  width: 1000px;
+  .center();
+  //border: 1px solid red;
+}
+
+.link-wrap {
+  margin-bottom: 20px;
+  max-width: 312px;
+}
+
+.link-default{
+  outline: none;
+  display: inline-block;
+  font-family: @Sukhumvitset;
+  color: #fff;
+  background-color: @colorGrey;
+  font-size: @baseFontSize;
+  width: 100%;
+  padding: 13px 15px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  .transition(0.3s all ease);
+  &:hover,
+  &:focus,
+  &:active{
+    color: @textColor;
+    background-color: #fff;
+  }
+}
+
+.arrow-down--grey{
+  display: block;
+  background: url('@{rootUrl}general/arrow-down.png')no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(25px, 20px);
+  cursor: pointer;
+   &.arrow-hidden{
+    display: none;
+  }
+}
+
+.arrow-up--light{
+  display: block;
+  background: url('@{rootUrl}general/arrow-up-light.png')no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(25px, 20px);
+  cursor: pointer;
+   &.arrow-hidden{
+    display: none;
+  }
+}
+.arrow-down--light{
+  display: block;
+  cursor: pointer;
+  background: url('@{rootUrl}general/arrow-down-light.png')no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(25px, 20px);
+   &.arrow-hidden{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1601px){
+ .link-default{
+   font-size:  15px;
+ }
+}
+
+@media screen and (min-width: 1400px){
+  .container{
+    max-width: 1380px !important;
+  }
+}
+
+@media screen and (max-width: 1399px){
+  .width-1000{
+    width: 870px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .main{
+    &:after{
+      display: none;
+    }
+  }
+  .nav-line,
+  .nav-gap{
+    display: none;
+  }
+  .width-1000{
+    width: 685px;
+  }
+  .page-section{
+    padding-top: 150px !important;
+    padding-bottom: 145px !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .width-1000{
+    width: 100%;
+  }
+  .link-default{
+    //font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 578px){
+  .page-section {
+    padding-top: 110px !important;
+    padding-bottom: 110px !important;
+  }
+}

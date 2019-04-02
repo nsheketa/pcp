@@ -1,0 +1,135 @@
+.welcome{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  font-size: 16px;
+  position: relative;
+}
+.welcome__line{
+  position: absolute;
+  right: 25px;
+  bottom: -20px;
+  z-index: 10;
+  .size(10px, 100%);
+  background-color: #c4b8ac;
+  display: none;
+}
+.welcome__homepage{
+  background-image: url("@{rootUrl}homepage/welcome.jpg");
+  //background-position: center 23%;
+  background-position: center;
+}
+
+.welcome__text{
+  position: absolute;
+  z-index: 1;
+}
+
+.welcome__homepage-text{
+  bottom: 90px;
+  right: 100px;
+  text-align: right;
+  .arrow-down--grey{
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    -webkit-animation: jump 1s infinite ease-in-out;
+    animation: jump 1s infinite ease-in-out;
+  }
+}
+
+
+//WORK Page
+.welcome__work{
+  background-image: url("@{rootUrl}work/welcome.jpg");
+  background-position: center;
+}
+
+.welcome__page-text{
+  left: -30px;
+  bottom: 60px;
+}
+
+//DINE Page
+.welcome__dine{
+  background-image: url("@{rootUrl}dine/welcome.jpg");
+  background-position: center;
+}
+
+//LEISURE Page
+
+.welcome__leisure{
+  background-image: url("@{rootUrl}leisure/welcome.jpg");
+  background-position: center;
+}
+
+.welcome__leisure-text{
+  left: -84px;
+  bottom: 110px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .welcome__homepage-text{
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .welcome__homepage-text{
+    color: #fff;
+    max-width: 241px;
+    text-align: right;
+    right: 30px;
+    bottom: 11%;
+    .arrow-down--grey{
+      background-image: url('@{rootUrl}general/arrow-down-light.png');
+    }
+  }
+  .welcome__line{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome__homepage{
+    background-image: url("@{rootUrl}homepage/welcome-mob.png");
+    background-position: center 36%;
+  }
+  .welcome__page-text {
+    left: -40px;
+  }
+
+  .welcome__leisure-text{
+    left: -84px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+
+}
+
+@-webkit-keyframes jump {
+  0%   {bottom: -45px;}
+  50%  {bottom: -42px;}
+  100% {bottom: -45px;}
+}
+@-moz-keyframes jump {
+  0%   {bottom: -45px;}
+  50%  {bottom: -42px;}
+  100% {bottom: -45px;}
+}
+@-o-keyframes jump {
+  0%   {bottom: -45px;}
+  50%  {bottom: -42px;}
+  100% {bottom: -45px;}
+}
+
+@keyframes jump {
+  0%   {bottom: -45px;}
+  50%  {bottom: -42px;}
+  100% {bottom: -45px;}
+}

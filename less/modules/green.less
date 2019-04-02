@@ -1,0 +1,182 @@
+.green{
+  padding: 150px 0 200px;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+.green__inner{
+  max-width: 100%;
+}
+
+.green__content-wrap{
+  position: relative;
+  width: 47%;
+  margin-left: 7%;
+}
+
+.green__content-item{
+  color: #fff;
+  padding: 2% 4%;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.green__content-item-01{
+  background-color: #447265;
+  top: 20px;
+  left: 10%;
+}
+
+.green__content-item-02{
+  background-color: #8baa82;
+  top: 259px;
+  left: 20%;
+  .green__content-heading{
+    margin-bottom: 7%;
+  }
+}
+
+.green__content-item-03{
+  background-color: #61805a;
+  top: 520px;
+  left: 10%;
+  .green__content-heading{
+    margin-bottom: 7%;
+  }
+}
+
+.green__content-heading{
+  font-family: @Sukhumvitset;
+  font-size: 18px;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 3%;
+}
+
+.green__content-num{
+  color: @textColor;
+  font-family: @Sukhumvitset;
+  font-size: 30px;
+  .rotate(90deg);
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.green__content{
+  max-width: 95%;
+  line-height: 1.6;
+}
+
+.green__img{
+  position: relative;
+  width: 40%;
+  height: 600px;
+  margin-left: auto;
+  background: url("@{rootUrl}homepage/green-mob.jpg")no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-right: 7%;
+}
+
+.green-item__heading{
+  position: absolute;
+  right: -210px;
+  top: 154px;
+}
+
+@media screen and (max-width: 992px) {
+  .green__inner{
+    .flex-direction-col();
+    padding: 0 15px;
+  }
+  .green__content-wrap{
+    margin-left: 0;
+    .flex-order(2);
+    width: 100%;
+  }
+  .green__img{
+    width: 100%;
+    height: 700px;
+    .flex-order(1);
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .green__content-item{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+    height: auto;
+    overflow-y: hidden;
+  }
+  .green__content-item-01{
+    top: 0;
+    left:0;
+  }
+  .green__content-item-02{
+    top: 0;
+    left:0;
+    .green__content-heading{
+      margin-bottom: 35px;
+    }
+  }
+  .green__content-item-03{
+    top: 0;
+    left:0;
+    .green__content-heading{
+      margin-bottom: 45px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .green__img{
+    background-image: url("@{rootUrl}homepage/green-mob.jpg");
+  }
+  .green__content{
+    width: 100%;
+    max-width: 100%;
+  }
+  .green__content-heading{
+    margin-bottom: 8%;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .green-item__heading {
+    right: -155px;
+    top: 116px;
+  }
+  .green__img{
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .green__content-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+  }
+}
+
+//for IE
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) and(min-width: 1400px){
+  .green-item__heading{
+    right: -180px;
+  }
+}
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) and(max-width: 1399px) {
+  .green-item__heading {
+    right: -180px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) and(max-width: 578px) {
+  .green-item__heading {
+    right: -136px;
+  }
+}

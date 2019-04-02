@@ -1,0 +1,178 @@
+.terms__wrapper {
+  position: absolute;
+  bottom: 2%;
+  right: 2.6%;
+  min-width: 200px;
+  text-align: right;
+  line-height: 1.5;
+  .termDropdown {
+    background-color: rgba(255, 255, 255, 0.43);
+    color: @textColor;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .termDropdownArrow {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    right: -15px;
+    top: 9px;
+    transition: all 0.3s ease;
+    &.on{
+      transform: rotate(90deg);
+      top: 8px;
+    }
+    &:after{
+      position: absolute;
+      content: "";
+      border: 5px solid transparent;
+      border-top: 7px solid rgba(255, 255, 255, 0.43);
+      display: block;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+.copyright{
+  position: relative;
+  display: none;
+  right: 0;
+  line-height: 1.2;
+  a{
+    background-color: rgba(255, 255, 255, 0.43);
+    color: @textColor;
+    outline: none;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+
+.modal-content{
+  border: none;
+  box-shadow: none;
+  &.mainText {
+    background: #c0c0c0;
+    width: 100%;
+    padding: 40px 100px;
+  }
+  p {
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  .h1 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transform: none;
+    color: @textColor;
+  }
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+.modal {
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -4px;
+    height: 100%;
+  }
+}
+
+.modal-header {
+  .close {
+    margin-top: -40px;
+    margin-right: -80px;
+    font-size: 62px;
+    opacity: 1;
+    text-shadow: none;
+    font-weight: 100;
+    color: #333;
+    &:active,
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.headerTextBlock {
+  p {
+    margin-bottom: 6px;
+  }
+}
+
+.modal-backdrop.in {
+  background: transparent;
+}
+.modal-header {
+  border: none;
+  min-height: 1px;
+}
+
+@media (max-width: 1024px) {
+  .modal-dialog {
+    width: 92%;
+  }
+
+  .modal-header .close {
+    margin-right: -40px
+  }
+
+  .modal {
+    &:before {
+      height: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .terms__wrapper{
+    right: 30px;
+    .termDropdownArrow{
+      display: none;
+    }
+  }
+  .terms__wrapper .header {
+    width: 70%;
+  }
+
+  .terms__wrapper .mainText {
+    padding: 40px 30px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal-header {
+    padding: 0 15px;
+  }
+
+  .modal-header .close {
+    margin-right: -20px;
+    margin-top: -20px;
+  }
+
+  .terms__wrapper .headerTextBlock {
+    bottom: 70px;
+  }
+
+  .modal-content.mainText {
+    padding: 30px;
+  }
+}
+ 
